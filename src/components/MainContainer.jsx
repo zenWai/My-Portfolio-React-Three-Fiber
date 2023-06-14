@@ -6,8 +6,11 @@ import StarsAnimated from "./StarsAnimated.jsx";
 import Hero from "./Hero.jsx";
 import {Suspense} from "react";
 import About from "./About.jsx";
-import projects from "./Projects.jsx";
 import Projects from "./Projects.jsx";
+import WorkExperience from "./WorkExperience.jsx";
+import Contact from "./Contact.jsx";
+import Earth from "./canvas/Earth.jsx";
+
 
 const MainContainer = () => {
     const bgColor= ({gl}) => {
@@ -27,6 +30,7 @@ const MainContainer = () => {
               <Suspense fallback={null}>
                   <StarsAnimated />
                   <ReactLogo />
+                  <Earth />
               </Suspense>
 
           </Canvas>
@@ -35,6 +39,8 @@ const MainContainer = () => {
           <Hero />
           <About />
           <Projects />
+          <WorkExperience />
+          <Contact />
       </>
   )
 }
