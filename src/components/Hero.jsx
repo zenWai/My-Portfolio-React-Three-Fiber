@@ -4,10 +4,7 @@ import {useEffect} from "react";
 import '../index.css'
 
 
-const Hero = () => {
-    //increase delay for mobile
-    const isMobile = window.innerWidth <= 767;
-    const delayTime = isMobile ? 2.8 : 1.4;
+const Hero = ({ isLoaded }) => {
     //motion.h1
     const h1variants = {
         visible: {
@@ -18,7 +15,7 @@ const Hero = () => {
                 bounce: 0.5,
                 stiffness: 100,
                 duration: 1,
-                delay: delayTime,
+                delay: 1.5,
             }
         },
         hidden: {
@@ -36,7 +33,7 @@ const Hero = () => {
                 bounce: 0.5,
                 stiffness: 100,
                 duration: 0.8,
-                delay: delayTime + 0.5,
+                delay: 2.3,
             }
         },
         hidden: {
@@ -50,10 +47,10 @@ const Hero = () => {
 
     //starts hidden
     useEffect(() => {
-        if(inView) {
+        if(isLoaded && inView) {
             controls.start('visible')
         }
-    }, [controls, inView])
+    }, [controls, inView, isLoaded])
 
     return (
         <section className='w-screen h-screen mx-auto'>
