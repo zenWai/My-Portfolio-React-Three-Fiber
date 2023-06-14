@@ -1,0 +1,424 @@
+{
+  "asset": {
+    "copyright": "absurd",
+    "generator": "Khronos glTF Blender I/O v1.7.33",
+    "version": "2.0"
+  },
+  "scene": 0,
+  "scenes": [
+    {
+      "name": "Scene",
+      "nodes": [0, 1, 2, 3]
+    }
+  ],
+  "nodes": [
+    {
+      "mesh": 0,
+      "name": "Sphere",
+      "scale": [0.4571356475353241, 0.4486887753009796, 0.4824969470500946],
+      "translation": [0, -0.04463541507720947, 0]
+    },
+    {
+      "mesh": 1,
+      "name": "Torus",
+      "rotation": [
+        0.47967496514320374, -0.7704335451126099, -0.06883613765239716,
+        0.4142530858516693
+      ],
+      "scale": [1.1732639074325562, 1.3814243078231812, 1.1897740364074707],
+      "translation": [0.008165419101715088, -0.028304480016231537, 0]
+    },
+    {
+      "mesh": 2,
+      "name": "Torus.001",
+      "rotation": [
+        0.4143480062484741, 0.06868395954370499, -0.7704470753669739,
+        -0.47959309816360474
+      ],
+      "scale": [1.1732639074325562, 1.3814243078231812, 1.1897740364074707],
+      "translation": [0.008165419101715088, -0.028304480016231537, 0]
+    },
+    {
+      "mesh": 3,
+      "name": "Torus.002",
+      "rotation": [
+        -0.18686309456825256, 0.2199314534664154, 0.048165906220674515,
+        -0.9562386870384216
+      ],
+      "scale": [1.1732639074325562, 1.3814243078231812, 1.1897740364074707],
+      "translation": [0.008165419101715088, -0.028304480016231537, 0]
+    }
+  ],
+  "animations": [
+    {
+      "channels": [
+        {
+          "sampler": 0,
+          "target": {
+            "node": 0,
+            "path": "rotation"
+          }
+        }
+      ],
+      "name": "SphereAction",
+      "samplers": [
+        {
+          "input": 14,
+          "interpolation": "LINEAR",
+          "output": 15
+        }
+      ]
+    },
+    {
+      "channels": [
+        {
+          "sampler": 0,
+          "target": {
+            "node": 1,
+            "path": "rotation"
+          }
+        }
+      ],
+      "name": "TorusAction1",
+      "samplers": [
+        {
+          "input": 14,
+          "interpolation": "LINEAR",
+          "output": 16
+        }
+      ]
+    },
+    {
+      "channels": [
+        {
+          "sampler": 0,
+          "target": {
+            "node": 2,
+            "path": "rotation"
+          }
+        }
+      ],
+      "name": "TorusAction2",
+      "samplers": [
+        {
+          "input": 14,
+          "interpolation": "LINEAR",
+          "output": 17
+        }
+      ]
+    },
+    {
+      "channels": [
+        {
+          "sampler": 0,
+          "target": {
+            "node": 3,
+            "path": "rotation"
+          }
+        }
+      ],
+      "name": "TorusAction3",
+      "samplers": [
+        {
+          "input": 14,
+          "interpolation": "LINEAR",
+          "output": 18
+        }
+      ]
+    }
+  ],
+  "materials": [
+    {
+      "doubleSided": true,
+      "name": "reactMaterial",
+      "pbrMetallicRoughness": {}
+    }
+  ],
+  "meshes": [
+    {
+      "name": "Sphere",
+      "primitives": [
+        {
+          "attributes": {
+            "POSITION": 0,
+            "NORMAL": 1,
+            "TEXCOORD_0": 2
+          },
+          "indices": 3,
+          "material": 0
+        }
+      ]
+    },
+    {
+      "name": "Torus",
+      "primitives": [
+        {
+          "attributes": {
+            "POSITION": 4,
+            "NORMAL": 5,
+            "TEXCOORD_0": 6
+          },
+          "indices": 7,
+          "material": 0
+        }
+      ]
+    },
+    {
+      "name": "Torus.002",
+      "primitives": [
+        {
+          "attributes": {
+            "POSITION": 8,
+            "NORMAL": 9,
+            "TEXCOORD_0": 10
+          },
+          "indices": 7,
+          "material": 0
+        }
+      ]
+    },
+    {
+      "name": "Torus.003",
+      "primitives": [
+        {
+          "attributes": {
+            "POSITION": 11,
+            "NORMAL": 12,
+            "TEXCOORD_0": 13
+          },
+          "indices": 7,
+          "material": 0
+        }
+      ]
+    }
+  ],
+  "accessors": [
+    {
+      "bufferView": 0,
+      "componentType": 5126,
+      "count": 559,
+      "max": [0.9999997019767761, 1, 0.9999994039535522],
+      "min": [-0.9999990463256836, -1, -0.9999987483024597],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 1,
+      "componentType": 5126,
+      "count": 559,
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 2,
+      "componentType": 5126,
+      "count": 559,
+      "type": "VEC2"
+    },
+    {
+      "bufferView": 3,
+      "componentType": 5123,
+      "count": 2880,
+      "type": "SCALAR"
+    },
+    {
+      "bufferView": 4,
+      "componentType": 5126,
+      "count": 637,
+      "max": [2.5862491130828857, 0.11569782346487045, 2.5862488746643066],
+      "min": [-2.5862488746643066, -0.11574270576238632, -2.5862491130828857],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 5,
+      "componentType": 5126,
+      "count": 637,
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 6,
+      "componentType": 5126,
+      "count": 637,
+      "type": "VEC2"
+    },
+    {
+      "bufferView": 7,
+      "componentType": 5123,
+      "count": 3456,
+      "type": "SCALAR"
+    },
+    {
+      "bufferView": 8,
+      "componentType": 5126,
+      "count": 637,
+      "max": [2.5862491130828857, 0.11569782346487045, 2.5862488746643066],
+      "min": [-2.5862488746643066, -0.11574270576238632, -2.5862491130828857],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 9,
+      "componentType": 5126,
+      "count": 637,
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 10,
+      "componentType": 5126,
+      "count": 637,
+      "type": "VEC2"
+    },
+    {
+      "bufferView": 11,
+      "componentType": 5126,
+      "count": 637,
+      "max": [2.5862491130828857, 0.11569782346487045, 2.5862488746643066],
+      "min": [-2.5862488746643066, -0.11574270576238632, -2.5862491130828857],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 12,
+      "componentType": 5126,
+      "count": 637,
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 13,
+      "componentType": 5126,
+      "count": 637,
+      "type": "VEC2"
+    },
+    {
+      "bufferView": 14,
+      "componentType": 5126,
+      "count": 90,
+      "max": [3],
+      "min": [0.03333333333333333],
+      "type": "SCALAR"
+    },
+    {
+      "bufferView": 15,
+      "componentType": 5126,
+      "count": 90,
+      "type": "VEC4"
+    },
+    {
+      "bufferView": 16,
+      "componentType": 5126,
+      "count": 90,
+      "type": "VEC4"
+    },
+    {
+      "bufferView": 17,
+      "componentType": 5126,
+      "count": 90,
+      "type": "VEC4"
+    },
+    {
+      "bufferView": 18,
+      "componentType": 5126,
+      "count": 90,
+      "type": "VEC4"
+    }
+  ],
+  "bufferViews": [
+    {
+      "buffer": 0,
+      "byteLength": 6708,
+      "byteOffset": 0
+    },
+    {
+      "buffer": 0,
+      "byteLength": 6708,
+      "byteOffset": 6708
+    },
+    {
+      "buffer": 0,
+      "byteLength": 4472,
+      "byteOffset": 13416
+    },
+    {
+      "buffer": 0,
+      "byteLength": 5760,
+      "byteOffset": 17888
+    },
+    {
+      "buffer": 0,
+      "byteLength": 7644,
+      "byteOffset": 23648
+    },
+    {
+      "buffer": 0,
+      "byteLength": 7644,
+      "byteOffset": 31292
+    },
+    {
+      "buffer": 0,
+      "byteLength": 5096,
+      "byteOffset": 38936
+    },
+    {
+      "buffer": 0,
+      "byteLength": 6912,
+      "byteOffset": 44032
+    },
+    {
+      "buffer": 0,
+      "byteLength": 7644,
+      "byteOffset": 50944
+    },
+    {
+      "buffer": 0,
+      "byteLength": 7644,
+      "byteOffset": 58588
+    },
+    {
+      "buffer": 0,
+      "byteLength": 5096,
+      "byteOffset": 66232
+    },
+    {
+      "buffer": 0,
+      "byteLength": 7644,
+      "byteOffset": 71328
+    },
+    {
+      "buffer": 0,
+      "byteLength": 7644,
+      "byteOffset": 78972
+    },
+    {
+      "buffer": 0,
+      "byteLength": 5096,
+      "byteOffset": 86616
+    },
+    {
+      "buffer": 0,
+      "byteLength": 360,
+      "byteOffset": 91712
+    },
+    {
+      "buffer": 0,
+      "byteLength": 1440,
+      "byteOffset": 92072
+    },
+    {
+      "buffer": 0,
+      "byteLength": 1440,
+      "byteOffset": 93512
+    },
+    {
+      "buffer": 0,
+      "byteLength": 1440,
+      "byteOffset": 94952
+    },
+    {
+      "buffer": 0,
+      "byteLength": 1440,
+      "byteOffset": 96392
+    }
+  ],
+  "buffers": [
+    {
+      "byteLength": 97832,
+      "uri": "reactLogoAnimated.bin"
+    }
+  ]
+}
