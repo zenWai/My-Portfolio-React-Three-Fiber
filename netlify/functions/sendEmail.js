@@ -21,8 +21,8 @@ exports.handler = async (event, context) => {
         let info = await transporter.sendMail({
             from: params.from_email,
             to: process.env.EMAIL_USER,
-            subject: 'New message from ' + params.from_name,
-            text: params.message,
+            subject: 'New message from Portfolio by: ' + params.from_name,
+            text: `Message from: ${params.from_email}\n\n${params.message}`,
         });
 
         return {
