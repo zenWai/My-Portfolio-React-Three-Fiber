@@ -8,3 +8,7 @@
 /dataSources.local.xml
 .idea/
 node_modules/
+
+# Local Netlify folder
+.netlify
+.env
