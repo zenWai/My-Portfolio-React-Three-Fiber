@@ -27,38 +27,38 @@ const Contact = () => {
         e.preventDefault()
         setLoading(true)
 
-        emailjs
-            .send(
-                'service_',
-                'template_',
-                {
-                    from_name: form.name,
-                    to_name: 'FP',
-                    from_email: form.email,
-                    to_email: '',
-                    message: form.message,
-                },
-                'authkey'
-            )
-            .then(
-                () => {
-                    setLoading(false)
-                    alert('Thanks! I will get back to you soon.')
-
+        fetch("/.netlify/functions/sendEmail", {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json"
+            },
+            body: JSON.stringify({
+                from_name: form.name,
+                from_email: form.email,
+                message: form.message,
+            }),
+        })
+            .then(response => response.json())
+            .then(data => {
+                setLoading(false);
+                if (data.statusCode === 200) {
+                    alert('Message sent successfully! Thanks! I will get back to you soon.')
                     setForm({
                         name: '',
                         email: '',
                         message: '',
-                    })
-                },
-                (error) => {
-                    setLoading(false)
-                    console.error(error)
-
-                    alert('Oops, something went wrong. Please try again.')
+                    });
+                } else {
+                    throw new Error('Something went wrong message failed');
                 }
-            )
+            })
+            .catch((error) => {
+                setLoading(false);
+                console.error('Error:', error);
+                alert('Oops, something went wrong. Please try again.')
+            });
     }
+
     const contactVariants = {
         visible: {
             opacity: 1,
