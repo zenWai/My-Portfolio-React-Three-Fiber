@@ -1,7 +1,6 @@
 import {useRef, useState, useEffect} from "react";
 import {useAnimation, motion} from "framer-motion";
 import {useInView} from "react-intersection-observer";
-import emailjs from '@emailjs/browser'
 
 const Contact = () => {
     const formRef = useRef();
@@ -108,6 +107,7 @@ const Contact = () => {
                             value={form.name}
                             onChange={handleChange}
                             placeholder='Your Name'
+                            autoComplete='name'
                             className='border-2 form-field-color py-4 px-6 text-white rounded-lg outline-none font-medium'
                         />
                     </label>
@@ -119,6 +119,7 @@ const Contact = () => {
                             value={form.email}
                             onChange={handleChange}
                             placeholder='Your email'
+                            autoComplete='email'
                             className='border-2 form-field-color text-white py-4 px-6 rounded-lg outline-none font-medium'
 
                         />

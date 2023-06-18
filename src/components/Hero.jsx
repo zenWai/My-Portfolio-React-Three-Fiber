@@ -62,7 +62,7 @@ const Hero = ({ isLoaded }) => {
                     animate={controls}
                     initial='hidden'>
 
-                    Hi, i'm{' '}
+                    Hello, i'm{' '}
                     <span className='hover-text-glow light-blue-text font-semibold'>
                         Fernando{' '}
                     </span> {' '}
@@ -75,7 +75,12 @@ const Hero = ({ isLoaded }) => {
                     animate={controls}
                     initial='hidden'>
 
-                    a Developer Tech Enthusiast Coder and a Cat Lover
+                    a <span className='hover-text-glow light-blue-text font-semibold'>
+                        Developer{' '}
+                    </span> {' '}
+                    Tech Enthusiast and <span className='hover-text-glow light-blue-text font-semibold'>
+                        Coder{' '}
+                    </span> {' '}
                 </motion.h2>
             </div>
             {/*arrows*/}

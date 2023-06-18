@@ -9,7 +9,7 @@ const StarsAnimated = () => {
     const starProps = useMemo(() =>({
         radius: 1,
         depth: 80,
-        count: 5000,
+        count: 2500,
         factor: 5,
         saturation: 0,
         fade: true,

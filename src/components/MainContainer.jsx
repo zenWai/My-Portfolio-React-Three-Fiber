@@ -7,7 +7,6 @@ import Hero from "./Hero.jsx";
 import {Suspense, useRef, useState} from "react";
 import About from "./About.jsx";
 import Projects from "./Projects.jsx";
-import WorkExperience from "./WorkExperience.jsx";
 import Contact from "./Contact.jsx";
 import Earth from "./canvas/Earth.jsx";
 
@@ -32,7 +31,7 @@ const MainContainer = () => {
                 camera={{ position: [20, 3, 5], fov: 25 }}
                 onCreated={handleCreated}
             >
-                <color attach="background" args={['black']} />
+                <color attach="background" args={['#9b96dd']}/>
 
                 <pointLight intensity={2} color={0x61dbfb} position={[0, 5, 5]}/>
                 <spotLight intensity={1} color={0x61dbfb} position={(-20, 50, 10)}/>
@@ -45,11 +44,12 @@ const MainContainer = () => {
             </Canvas>
 
             <Loader/>
-            <Hero isLoaded={isLoaded}/>
-            <About/>
-            <Projects/>
-            <WorkExperience/>
-            <Contact/>
+            <div className="flex flex-col">
+                <Hero isLoaded={isLoaded}/>
+                <About/>
+                <Projects/>
+                <Contact/>
+            </div>
         </>
     )
 }
